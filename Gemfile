@@ -5,6 +5,7 @@ gem 'angular-rails-templates'
 gem 'devise', '~> 3.4.0'
 gem 'jbuilder', '~> 2.0'
 gem 'pg'
+gem 'rails_12factor', group: :production
 gem 'rails', '4.2.5'
 gem 'responders'
 gem 'sass-rails', '~> 5.0'
@@ -22,3 +23,5 @@ group :development do
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
+
+ruby '2.2.3'
