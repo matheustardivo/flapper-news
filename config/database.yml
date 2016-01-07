@@ -1,16 +1,21 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+
+docker: &docker
+  <<: *default
   timeout: 5000
   username: postgres
   host: postgres
   port: 5432
 
 development:
-  <<: *default
+  <<: *docker
   database: app_development
 
 test:
-  <<: *default
+  <<: *docker
   database: app_test
