@@ -22,3 +22,5 @@ You can use the follow commands to watch the application logs and stop the conta
 docker-compose logs
 docker-compose stop
 ```
+
+This application is also running at Heroku: https://mt-flapper-news.herokuapp.com
